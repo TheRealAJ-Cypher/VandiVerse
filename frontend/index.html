@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#0d0c18">
+  <meta name="description" content="VandiVerse — The intelligent, offline-friendly family road trip companion app. Plan routes, monitor weather forecasts, track packing readiness, and consult an AI copilot.">
+  <meta property="og:title" content="VandiVerse — Family Road Trip Companion">
+  <meta property="og:description" content="Plan family road trips safely with real-time weather forecasts, interactive vehicle and luggage checklists, and AI travel assistance.">
+  <meta property="og:type" content="website">
+  <title>VandiVerse — Family Road Trip Companion</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Safety Warning Banner -->
+    <div id="safety-banner" role="alert">
+      <span>🚗 Plan before you drive. Never use this app while driving.</span>
+    </div>
+
+    <!-- Main Header -->
+    <header id="main-header" role="banner">
+      <span class="header-logo" aria-hidden="true">🗺️</span>
+      <div class="header-titles">
+        <h1 class="header-title">VandiVerse</h1>
+        <p class="header-tagline">Road Trip Companion</p>
+      </div>
+    </header>
+
+    <!-- Dynamic Page Content -->
+    <main id="page-content" role="main" tabindex="-1" aria-live="polite">
+      <!-- Injected by page routers -->
+    </main>
+
+    <!-- Bottom Navigation Bar -->
+    <nav id="bottom-nav" role="navigation" aria-label="Main navigation">
+      <button type="button" class="nav-tab active" id="nav-trip" data-page="trip" aria-label="Trip Planner" aria-current="page">
+        <span class="nav-icon" aria-hidden="true">🗺️</span>
+        <span class="nav-label">Trip</span>
+      </button>
+      <button type="button" class="nav-tab" id="nav-weather" data-page="weather" aria-label="Weather Forecast" aria-current="false">
+        <span class="nav-icon" aria-hidden="true">🌤️</span>
+        <span class="nav-label">Weather</span>
+      </button>
+      <button type="button" class="nav-tab" id="nav-checklist" data-page="checklist" aria-label="Checklists" aria-current="false">
+        <span class="nav-icon" aria-hidden="true">✅</span>
+        <span class="nav-label">Checklist</span>
+      </button>
+      <button type="button" class="nav-tab" id="nav-ai" data-page="ai" aria-label="AI Travel Assistant" aria-current="false">
+        <span class="nav-icon" aria-hidden="true">🤖</span>
+        <span class="nav-label">AI</span>
+      </button>
+      <button type="button" class="nav-tab nav-tab-sos" id="nav-sos" data-page="sos" aria-label="SOS and Roadside Assistance" aria-current="false">
+        <span class="nav-icon" aria-hidden="true">🆘</span>
+        <span class="nav-label">SOS</span>
+      </button>
+    </nav>
+  </div>
+
+  <!-- Application Logic Scripts -->
+  <script src="/js/app.js"></script>
+  <script src="/js/trip.js"></script>
+  <script src="/js/weather.js"></script>
+  <script src="/js/checklist.js"></script>
+  <script src="/js/ai.js"></script>
+  <script src="/js/sos.js"></script>
+</body>
+</html>
